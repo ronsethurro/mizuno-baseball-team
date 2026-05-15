@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<html>
+
+<head>
+
+	<title>春山 啟 はるやま あきら</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&display=swap" rel="stylesheet">
+
+
+	<style>
+	
+		body, html {
+            width: 100%;
+        }
+	
+		body {
+			background-image: url('https://i.pinimg.com/1200x/dc/81/a1/dc81a1f9f9e8e230f992bcee13b140d0.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			padding: 100px 0;
+		}
+		
+		.container {
+            position: relative;
+            width: 80%;
+			height: 1200px;
+			align: center;
+			overflow: hidden;
+			background-color: #8c99aa;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+		
+		.box {
+			flex-direction: row;
+			position: absolute;
+			display: flex;
+		}
+		
+		.tab1 {
+			margin-top: 5px;
+			margin-left: 10px;
+			background-color: white;
+			color: #333;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			white-space: nowrap;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			text-align: center;
+			width: 70px;
+		}
+		
+		.tab2 {
+			margin-top: 5px;
+			margin-left: 10px;
+			background-color: white;
+			color: #333;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			white-space: nowrap;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			text-align: center;
+			width: 70px;
+		}
+		
+		.tab3 {
+			margin-top: 5px;
+			margin-left: 10px;
+			background-color: white;
+			color: #333;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			white-space: nowrap;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			text-align: center;
+			width: 70px;
+		}
+		
+		.word1 {
+			font-family: "DotGothic16", sans-serif;
+			padding-bottom: 3px;
+		}
+		
+		.word2 {
+			font-family: "DotGothic16", sans-serif;
+		}
+		
+		.word3 {
+			font-family: "Jersey 10", sans-serif;
+			font-size: 20px;
+			font-style: normal;
+			padding-left: 10px;
+			color: rgba(255,255,255,1)
+		}
+		
+		.word4 {
+			font-family: "DotGothic16", sans-serif;
+			font-size: 35px;
+			padding-top: 30px;
+			padding-left: 15px;
+		}
+		
+		.word5 {
+			font-family: "DotGothic16", sans-serif;
+			padding-left: 15px;
+		}
+		
+		.word6 {
+			font-family: "DotGothic16", sans-serif;
+			padding-top: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding bottom: 15px;
+			font-size: 13px;
+		}
+		
+		.word7 {
+			position: absolute;
+			font-family: "Inter", sans-serif;
+			font-size: 13px;
+			font-style: normal;
+			color: white;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			padding-top: 45%
+		}
+		
+		.word8 {
+			position: absolute;
+			font-family: "Inter", sans-serif;
+			font-size: 10px;
+			font-style: normal;
+			color: white;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			padding-top: 70%
+		}
+		
+		.word9 {
+			position: absolute;
+			font-family: "Inter", sans-serif;
+			font-size: 8px;
+			font-style: normal;
+			color: white;
+			white-space: nowrap;
+			top: 82%;
+			left: 80%;
+		}
+		
+		.word10 {
+			position: absolute;
+			font-family: "Inter", sans-serif;
+			font-size: 8px;
+			font-style: normal;
+			color: white;
+			white-space: nowrap;
+			top: 82%;
+			left: 10%;
+		}
+		
+		.duration{
+			position: absolute;
+			height: 1px;
+			width: 125px;
+			background-color: white;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 80%;
+		}
+		
+		.decoration1 {
+			position: absolute;
+			top: 0;
+			right: 2px;
+			width: 290px;
+			height: 45px;
+			background-color: white;
+			border-radius: 10px;
+			clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding-right: 14px;
+			box-sizing: border-box;
+		}
+		
+		.decoration1 img {
+			width: 15px;
+			height: 15px;
+			margin-left: 25px;
+			opacity: 0.6;
+			padding-bottom: 3px;
+		}
+		
+		.bannerbox {
+            position: absolute;
+            width: 99%;
+            height: 160px;
+            border: 5px solid white;
+            overflow: hidden;
+			margin-top: 35px;
+        }
+		
+		.banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+		
+		.avatarbox {
+			position: absolute;
+			height: 300px;
+			width: 400px;
+			top: 25%;
+			left: 3%;
+			background-color: #81bbeb;
+			background-image: linear-gradient(to bottom, #64a4e2, #81bbeb);
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		
+		.namebox{
+			position: absolute;
+			border-radius: 10px 10px 0 0;
+			top: 20%;
+			left: 40%;
+			background-color: white;
+			height: 150px;
+			width: 530px;
+			align-items: center;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		
+		.nameboxtab {
+			position: absolute;
+			border-radius: 10px 10px 0 0;
+			width: 99.5%;
+			height: 20px;
+			background-color: #64a4e2;
+			background-image: linear-gradient(to right, #64a4e2, #81bbeb);
+			border: 2px solid #1d4d7f;
+		}
+		
+		.personalitybox {
+			position: absolute;
+			border-radius: 10px 10px 0 0;
+			top: 28%;
+			left: 60%;
+			background-color: white;
+			height: 190px;
+			width: 450px;
+			align-items: center;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		
+		.personalityboxtab {
+			position: absolute;
+			border-radius: 10px 10px 0 0;
+			left: -0.5%;
+			width: 100%;
+			height: 20px;
+			background-color: #64a4e2;
+			background-image: linear-gradient(to right, #64a4e2, #81bbeb);
+			border: 2px solid #1d4d7f;
+		}
+		
+		.musicbox {
+			position: absolute;
+			height: 270px;
+			width: 180px;
+			border-radius: 10px;
+			background-color: rgba(0,0,0,0.7);
+			left: 42%;
+			top: 35%;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		
+		.musicpic {
+			position: absolute;
+			height: 130px;
+			width: 130px;
+			background-size: cover;
+			background-position: center;
+			background-image: url('https://images.plurk.com/56KjTuIL2ruS2AAYNnlQEW.jpg');
+			top: 8%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.playbutton {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			padding-top: 126%;
+		}
+		
+		.nextbutton {
+			position: absolute;
+			left: 68%;
+			transform: translateX(-50%);
+			padding-top: 129%;
+		}
+		
+		.previousbutton {
+			position: absolute;
+			left: 31%;
+			transform: translateX(-50%);
+			padding-top: 129%;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="box">
+			<div class="tab1"><div class="word2">水野高中</div></div>
+			<div class="tab2"><div class="word2">高一</div></div>
+			<div class="tab3"><div class="word2">投手</div></div>
+		</div>
+		
+		<div class="decoration1"><div class="word1"><i>春山 啓　はるやま あきら</i></div><img src="https://images.plurk.com/4UdOERvokXcdvfqFZ98ElA.png"></div>
+		
+		<div class="bannerbox">
+			<div class="banner"><img src="https://i.pinimg.com/736x/70/5e/2f/705e2f2166b20243706a0b7b3881002b.jpg"></div>
+		</div>
+		
+		<div class="avatarbox">
+			<img src="https://images.plurk.com/3m34h7OV41orcgEWtx88HJ.png" style="position:absolute; height:450px; width:450px; bottom:0%; z-index:2;">
+		</div>
+		
+		<div class="namebox">
+			<div class="nameboxtab"><div class="word3">NAME</div></div>
+			<div class="word4"><i>春山 啓　はるやま あきら</div><br><div class="word5">Haruyama Akira</i></div>
+		</div>
+		
+		<div class="personalitybox">
+			<div class="personalityboxtab"><div class="word3">DETAILS</div></div>
+			<div class="word6">&emsp;&emsp;成績不錯的問題學生。<br><br>&emsp;&emsp;總是一臉慵懶的樣子，在能嘴學長的時候義不容辭，用最無害的樣子講最毒的話。<br><br>&emsp;&emsp;和老師們的感情都不錯，但因為穿釘的癖好所以老師還是很頭痛。</div>
+		</div>
+		
+		<div class="musicbox">
+			<div class="musicpic"></div>
+			<div class="word7">The Lazy Song</div>
+			<div class="word8">Bruno Mars</div>
+			<div class="duration"></div>
+			<div class="word9">3:20</div>
+			<div class="word10">0:00</div>
+			<div id="main-play-btn" class="playbutton" style="cursor: pointer;"><img src="https://images.plurk.com/4BvZv2IzpMNmJZCtK9zwj3.png" style="height:30px; width:30px;"></div>
+			<div class="nextbutton"><img src="https://images.plurk.com/S4hGdfm3EALDko78Kibx4.png" style="height:10px; width:10px;"></div>
+			<div class="previousbutton"><img src="https://images.plurk.com/5kDlbKzbURXhx6eBuQIkmY.png" style="height:10px; width:10px;"></div>
+			<div id="youtube-player" style="display:none;"></div>
+		</div>
+	
+	</div>
+	
+	<script src="https://www.youtube.com/iframe_api"></script>
+	
+<script>
+    // 1. 全域變數定義
+    let player;
+    const videoId = 'fLexgOxsZu0'; // 如果這首不行，建議換一個測試看看
+
+    // 2. YouTube API 非同步載入 (這比直接在 HTML 寫 script 更穩定)
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. API 準備好後自動執行
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-player', {
+            height: '0',
+            width: '0',
+            videoId: videoId,
+            playerVars: {
+                'autoplay': 0,
+                'controls': 0,
+                'loop': 1,
+                'playlist': videoId,
+                'origin': window.location.origin // 增加安全性來源標記
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onError': onPlayerError // 增加錯誤抓取
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        const playBtn = document.getElementById('main-play-btn');
+        
+        playBtn.addEventListener('click', function() {
+            // 確保 player 物件存在且有 getPlayerState 方法
+            if (player && player.getPlayerState) {
+                const state = player.getPlayerState();
+                if (state === YT.PlayerState.PLAYING) {
+                    player.pauseVideo();
+                } else {
+                    player.playVideo();
+                }
+            } else {
+                console.error("播放器尚未準備就緒");
+            }
+        });
+    }
+
+    function onPlayerError(e) {
+        console.error("YouTube 播放發生錯誤，可能是影片禁止嵌入或 ID 錯誤。錯誤代碼：" + e.data);
+    }
+</script>
+	
+</body>
+	
+</html>
